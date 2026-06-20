@@ -1,0 +1,31 @@
+{
+  "name": "cust-sports-week",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "server": "node --watch server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.4"
+  }
+}
